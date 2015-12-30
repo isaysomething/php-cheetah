@@ -1,0 +1,2 @@
+#define Cheetah_Kernel_Application_H
+zend_class_entry *cheetah_kernel_application_ce;

@@ -1,0 +1,2 @@
+#define Cheetah_Kernel_Invalid_Param_Exception_H
+zend_class_entry *cheetah_kernel_invalid_param_exception_ce;

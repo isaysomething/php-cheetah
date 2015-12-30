@@ -1,0 +1,2 @@
+#define Cheetah_Web_Controller_H
+zend_class_entry *cheetah_web_controller_ce;

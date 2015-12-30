@@ -1,0 +1,2 @@
+#define Cheetah_Web_Response_H
+zend_class_entry *cheetah_web_response_ce;

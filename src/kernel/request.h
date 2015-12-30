@@ -1,0 +1,2 @@
+#define Cheetah_Kernel_Request_H
+zend_class_entry *cheetah_kernel_request_ce;

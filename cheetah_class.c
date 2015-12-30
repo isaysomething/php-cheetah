@@ -1,0 +1,42 @@
+#include "cheetah_class.h"
+#include "src/kernel/exception.c"
+#include "src/kernel/invalid_param_exception.c"
+#include "src/cheetah.c"
+#include "src/kernel/object.c"
+#include "src/kernel/component.c"
+#include "src/di/container.c"
+#include "src/di/service_locator.c"
+#include "src/log/logger.c"
+#include "src/kernel/module.c"
+#include "src/kernel/application.c"
+#include "src/kernel/request.c"
+#include "src/kernel/controller.c"
+#include "src/kernel/view.c"
+#include "src/kernel/response.c"
+#include "src/web/application.c"
+#include "src/web/request.c"
+#include "src/web/controller.c"
+#include "src/web/view.c"
+#include "src/web/response.c"
+#define CHEETAH_REGISTER_CLASS()	\
+{	\
+	CHEETAH_CLASS_KERNEL_EXCEPTION()	\
+	CHEETAH_CLASS_KERNEL_INVALID_PARAM_EXCEPTION()	\
+	CHEETAH_CLASS_CHEETAH()	\
+	CHEETAH_CLASS_KERNEL_OBJECT()	\
+	CHEETAH_CLASS_KERNEL_COMPONENT()	\
+	CHEETAH_CLASS_DI_CONTAINER()	\
+	CHEETAH_CLASS_DI_SERVICE_LOCATOR()	\
+	CHEETAH_CLASS_LOG_LOGGER()	\
+	CHEETAH_CLASS_KERNEL_MODULE()	\
+	CHEETAH_CLASS_KERNEL_APPLICATION()	\
+	CHEETAH_CLASS_KERNEL_CONTROLLER()	\
+	CHEETAH_CLASS_KERNEL_REQUEST()	\
+	CHEETAH_CLASS_KERNEL_VIEW()		\
+	CHEETAH_CLASS_KERNEL_RESPONSE()		\
+	CHEETAH_CLASS_WEB_APPLICATION()	\
+	CHEETAH_CLASS_WEB_CONTROLLER()	\
+	CHEETAH_CLASS_WEB_REQUEST()	\
+	CHEETAH_CLASS_WEB_VIEW()		\
+	CHEETAH_CLASS_WEB_RESPONSE()		\
+}
